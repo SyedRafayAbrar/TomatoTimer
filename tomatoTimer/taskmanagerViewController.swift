@@ -19,19 +19,16 @@ var buttonPressed = false
     @IBOutlet weak var b2: UIButton!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var buttonConstraint: NSLayoutConstraint!
+    @IBOutlet weak var notesbottomConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         bblur1.layer.cornerRadius = 11
         bblur2.layer.cornerRadius = 11
-        bblur1.isHidden = true
-        bblur2.isHidden = true
+
         blur1.layer.cornerRadius = 4
         blur2.layer.cornerRadius = 4
-        blur1.isHidden = true
-        blur2.isHidden = true
-        self.heightConstraint.constant = 0
-self.b1.isHidden = true
-        self.b2.isHidden = true
+        buttonConstraint.constant = -163
+
         // Do any additional setup after loading the view.
     }
 
@@ -44,37 +41,30 @@ self.b1.isHidden = true
     @IBAction func addTaskPressed(_ sender: Any) {
         
         if buttonPressed==false{
-                self.heightConstraint.constant = 128
-            self.b1.isHidden = false
-            self.b2.isHidden = false
-            blur1.isHidden = false
-            blur2.isHidden = false
-            bblur1.isHidden = false
-            bblur2.isHidden = false
+            buttonConstraint.constant = 83
+
         UIView.animate(withDuration: 0.5, animations: {
             self.addtask.transform = CGAffineTransform(rotationAngle: 180)
             self.view.layoutIfNeeded()
 
-           
+            
         })
+
+
         buttonPressed = true
             
         } else {
-            
-              self.heightConstraint.constant = 0
-            
+buttonConstraint.constant = -163
+
             UIView.animate(withDuration: 0.5, animations: {
+               self.view.layoutIfNeeded()
                 self.addtask.transform = CGAffineTransform(rotationAngle: 0)
-                self.blur1.isHidden = true
-                self.blur2.isHidden = true
-                self.b1.isHidden = true
-                self.bblur1.isHidden = true
-                self.bblur2.isHidden = true
-                self.b2.isHidden = true
-self.view.layoutIfNeeded()
+                
+               
+
             })
 
-           
+
             
             buttonPressed = false
         }

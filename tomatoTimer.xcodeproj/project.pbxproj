@@ -13,6 +13,8 @@
 		C8C3F1DA20B3483300705875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C3F1D920B3483300705875 /* Assets.xcassets */; };
 		C8C3F1DD20B3483300705875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C3F1DB20B3483300705875 /* LaunchScreen.storyboard */; };
 		C8C3F1E520B3630C00705875 /* taskmanagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C3F1E420B3630C00705875 /* taskmanagerViewController.swift */; };
+		C8E041B220B60F3C00D6B321 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E041B120B60F3C00D6B321 /* Checkbox.swift */; };
+		C8E041B420B60FAA00D6B321 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E041B320B60FAA00D6B321 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C8C3F1DC20B3483300705875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8C3F1DE20B3483300705875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8C3F1E420B3630C00705875 /* taskmanagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskmanagerViewController.swift; sourceTree = "<group>"; };
+		C8E041B120B60F3C00D6B321 /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		C8E041B320B60FAA00D6B321 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				C8C3F1D220B3483200705875 /* AppDelegate.swift */,
 				C8C3F1D420B3483200705875 /* ViewController.swift */,
 				C8C3F1D620B3483200705875 /* Main.storyboard */,
+				C8E041B320B60FAA00D6B321 /* SettingViewController.swift */,
+				C8E041B120B60F3C00D6B321 /* Checkbox.swift */,
 				C8C3F1E420B3630C00705875 /* taskmanagerViewController.swift */,
 				C8C3F1D920B3483300705875 /* Assets.xcassets */,
 				C8C3F1DB20B3483300705875 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E041B420B60FAA00D6B321 /* SettingViewController.swift in Sources */,
+				C8E041B220B60F3C00D6B321 /* Checkbox.swift in Sources */,
 				C8C3F1D520B3483200705875 /* ViewController.swift in Sources */,
 				C8C3F1E520B3630C00705875 /* taskmanagerViewController.swift in Sources */,
 				C8C3F1D320B3483200705875 /* AppDelegate.swift in Sources */,
